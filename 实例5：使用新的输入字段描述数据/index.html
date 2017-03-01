@@ -1,0 +1,50 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form method="POST">
+            <fieldset id = "personal_information">
+                <legend>Project Information</legend>
+                <ol>
+                    <li>
+                        <!--<label> 标签的 for 属性应该等于相关元素的 id 元素，以便将它们捆绑起来-->
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id = "name">
+                    </li>
+
+                    <li>
+                        <label for="priority">Priority</label>
+                        <input type="range" min = "0" max = "10" name="priority" value="0" id = "priority">
+                    </li>
+                    <li>
+                        <label for="estimated_hours">Estimated Hours</label>
+                        <input type="number" name="estimated_hours" min = "0" max = "10" step = "2" id = "estimated_hours">
+                    </li>
+                    <li>
+                        <label for="start_date">Start date</label>
+                        <input type="date" name="start_date" value="2013-12-01" id = "start_date">
+                    </li>
+                    <li>
+                        <label for="email">Email contact</label>
+                        <input type="email" name="email" id = "email">
+                    </li>
+                    <li>
+                        <label for="url">Staging URL</label>
+                        <input type="url" name="url" id = "url">
+                    </li>
+                    <li>
+                        <label for="project_color">Project Color</label>
+                        <input type="color" name="project_color" value="project_color">
+                    </li>
+                    <li>
+                       <input type="submit" value = "Submit"> 
+                    </li>
+
+                </ol>
+            </fieldset>
+        </form>
+    </body>
+</html>
