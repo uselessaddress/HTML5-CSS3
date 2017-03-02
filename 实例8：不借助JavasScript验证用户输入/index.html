@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+         <form id = "creat_account" method = "post">
+            <fieldset id = "signup">
+                <legend>Creat Account</legend>
+                <ol>
+                    <li>
+                        <lable for = "first_name">First Name</lable>
+                        <input type="text" name="first_name" id = "first_name" autofocus placeholder="'John'" required>
+                    </li>
+                    <li>
+                        <lable for = "last_name">Last Name</lable>
+                        <input type="text" name="last_name"  id = "last_name" placeholder="'Smith'" required>
+                    </li>
+                    <li>
+                        <lable for = "email">Email</lable>
+                        <input type="email" name="email" id = "email" placeholder="user@example.com" required>
+                    </li>
+                    <li>
+                        <lable for = "password">Password</lable>
+                        <input type="password" name="password" id = "password"  autocomplete = "off" placeholder="8-10 characters"
+                                required
+                                pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$"
+                                title = "Password must be 8 or more characters with at least one number,an uppercase letter, and one special characters!"/>
+                    </li>
+                    <li>
+                        <lable for = "password_confirmation"> Password Confirmation</lable>
+                        <input type="password" name="password_confirmation" id = "password_confirmation" autocomplete="off" placeholder="Type your password again"
+                                required
+                                pattern="^(?=.{8,})(?=.*[a-z])(?=.*[A-Z])(?=.*[\d])(?=.*[\W]).*$"
+                                title = "Password confirmation must be 8 or more characters with at least one number,an uppercase letter, and one special characters!"/>
+                    </li>
+                    <li><input type="submit" value="Sign up"></li>
+                </ol>
+            </fieldset>
+        </form>
+    </body>
+</html>

@@ -1,0 +1,31 @@
+fieldset{
+    width:216px;
+}
+
+fieldset ol{
+    list-style: none;
+    padding:0;
+    margin:2px;
+}
+
+fieldset ol li{
+    margin : 0 0 9px 0;
+    padding : 0;
+}
+
+fieldset input{
+    display: block;
+}
+
+input[required]:invalid,input[pattern]:invalid{
+    border-color:#A5340B;
+}
+
+input[required]:valid,input[pattern]:valid{
+    border-color: #0B9900;
+}
+
+
+.required, .invalid{
+  border-color: #A5340B;
+}
