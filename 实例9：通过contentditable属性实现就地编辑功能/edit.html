@@ -1,0 +1,37 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <form action = "/user/1" method = "post" accept-charset = "utf-8">
+            <fieldset id = "your_information"> 
+                <legend>Your Information</legend>
+                <ol>
+                    <li>
+                        <label for="name">Your Name</label>
+                        <input type="text" name="name" id = "name">
+                    </li>
+                    <li>
+                        <label for="city">City</label>
+                        <input type="text" name="city" id = "city">
+                    </li>
+                    <li>
+                        <label for="state">State</label>
+                        <input type="text" name="state" id="state">
+                    </li>
+                    <li>
+                        <label for="postal_code">Postal Code</label>
+                        <input type="text" name="postal_code" id = "postal_code">
+                    </li>
+                    <li>
+                        <label for="email">Email</label>
+                        <input type="email" name = "email" id = "email">
+                    </li>
+                </ol>
+            </fieldset>
+            <p><input type="submit" value="Save"></p>
+        </form>
+    </body>
+</html>
