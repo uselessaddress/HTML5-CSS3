@@ -1,0 +1,37 @@
+table{
+    border-collapse: collapse;/*边框会合并为一个单一的边框*/
+    width:600px;
+}
+
+th,td{
+    border:none;
+}
+
+th{
+    background-color:#000;
+    color:#fff;
+}
+
+tr:nth-of-type(even){
+    background-color:#f3f3f3;
+}
+
+tr:nth-of-type(odd){
+    background-color:#ddd;
+}
+
+td:nth-child(n+2),th:nth-child(n+2){
+    text-align:right;
+}
+
+tr:last-child{
+    font-weight:bolder;
+}
+
+td:last-child{
+    font-weight:bolder;
+}
+
+td:last-child,tr:last-child{
+    font-size:24px;
+}
