@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <script type = "text/javascript" src = "http://apps.bdimg.com/libs/jquery/2.1.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <canvas id="my_canvas" width = "150" height = "150">
+            Fallback content here
+        </canvas>
+        <script type = "text/javascript">
+            var canvas = document.getElementById('my_canvas');
+            if(canvas.getContext){
+                var context = canvas.getContext('2d');
+
+                context.fillStyle = "rgb(200,0,0)";
+                context.fillRect(10,10,100,100);
+                context.fillStyle = "rgb(0,200,0)";
+                context.fillRect(20,20,100,100);
+                context.fillStyle = "rgb(0,0,200)";
+                context.fillRect(30,30,100,100);
+            }else{
+                //do something to show the canvas`s hidden contents
+                //or let the browser display the text within the <canvas> element.
+            }
+        </script>
+
+    </body>
+</html>
